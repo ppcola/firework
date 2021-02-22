@@ -1,54 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>盼盼新年快乐！</title>
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>The clown was myself</title>
     <style>
-        html,
         * {
             margin: 0;
-            padding: 0
+            border: 0;
+            padding: 0;
+            background-color: #333;
+            font-family: "Courier New", Courier, monospace;
         }
-
-        body {
-            background-image: url(http://i0.hdslb.com/bfs/article/f147d2f19bd63fac6d3b70daab1ec48fd7b38f49.png);
-            background-size: 100% 100%;
-            background-size: 100%; 
-            background-repeat:no-repeat;
-			
+        
+        #window {
+            position:absolute;
+            top:0;
+           bottom:0;
+           left:0;
+           right: 0;
+           background-color: #333;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
         }
-
-        .demo {
-            margin: 0 auto;
-            width: 100%;
-            height: 100%;
+        
+        #title-bar {
+            width: 595px;
+            height: 20px;
+            line-height: 20px;
+            padding-left: 5px;
+            font-size: 14px;
+            background-color: #eee;
+            font-family: Consolas, serif;
         }
-
-        h1 {
-            margin: 150px auto 30px auto;
-            text-align: center;
-            font-family: 'Roboto';
+        
+        #title-bar span:before {
+            content: "\25cf";
+        }
+        
+        #title-bar span {
+            font-size: 24px;
+        }
+        
+        #close {
+            color: red;
+        }
+        
+        #min {
+            color: yellow;
+        }
+        
+        #max {
+            color: #00FF00;
+        }
+        
+        tilte-title {
+            font-family: 'Arial Black', SimHei;
+            font-weight: bold;
+        }
+        
+        #show-board {
+            position:absolute;
+            top:0;
+           bottom:0;
+           left:0;
+           right: 0;
+           margin: 0 0 0 1.5em;
+            background-color: #333;
+            color: #eee;
+            padding: 10px;
+            font-family: "Courier New", Courier, monospace, Consolas, serif;
+            font-size: 70px;
         }
     </style>
 </head>
 
 <body>
-    <div class="demo">
-    </div>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="fireworks.js"></script>
-    <script>
-        $('.demo').fireworks({
-            sound: true,
-            opacity: 0.6,
-            width: '100%',
-            height: '100%'
-        });
-    </script>
 
+    <div id="window">
+        <!-- <div id="title-bar"><span id="close"></span><span id="min"></span><span id="max"></span><strong id="tilte-title">&nbsp;Console</strong></div> -->
+        <div id="show-board"></div>
+    </div>
+
+    <script src="printer.js"></script>
+    <script>
+        // var str = 'echo Welcome!\n';
+        var str = '  后来\n';
+        str += '  我们都做出了选择\n';
+        str += '  我选择了可乐\n';
+        str += '  可她没有选择我\n';
+        str += '  我好难过';
+        Printer.init(str, {
+            selector: 'show-board',
+            lnStr: ' '
+        }).print();
+    </script>
 </body>
 
 </html>
