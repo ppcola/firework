@@ -3,98 +3,420 @@
 
 <head>
     <meta charset="utf-8">
-    <title>The clown was myself</title>
-    <style>
-        * {
-            margin: 0;
-            border: 0;
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+        name="viewport">
+    <title>I'm falling. — Double Happiness</title>
+    <script src="404.js" async="true"></script>
+    <script>
+        console.log("后来");
+        console.log("我再也没喝过可乐。");
+        console.log(" ——双喜February23 2021");
+    </script>
+
+    <style type="text/css">
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .x404 {
+            height: 100vh;
+        }
+
+        header {
+            height: 4em;
+            background: #000000;
+            position: fixed;
+            top: 0;
+            -webkit-transition: top 0.2s ease-in-out;
+            transition: top 0.2s ease-in-out;
+            width: 100%;
+            z-index: 100
+        }
+
+        header .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        @media only screen and (max-width: 48em) {
+            header .container {
+                padding-top: 1.2em
+            }
+        }
+
+        @media only screen and (max-width: 388px) {
+            header .container {
+                padding-top: 0.8em
+            }
+        }
+
+        @media all and (max-width: 48em) {
+            header {
+                border-bottom: 1px solid #ffffff;
+                margin-bottom: 2em;
+                font-size: .9em
+            }
+        }
+
+        header .line,
+        header h3.lined {
+            display: none;
+        }
+
+        a:hover {
+            color: #3fdb58 !important;
+            text-shadow: -2px 0 0 rgba(0, 201, 16, 0.4), -4px 0 4px rgba(108, 236, 103, 0.6), 5px 0 4px rgba(69, 204, 91, 0.5);
+            font-family: monospace;
+            -webkit-font-smoothing: none
+        }
+
+        .x404,
+        footer {
+            background-color: #000;
+        }
+
+        .x404 *,
+        footer * {
+            color: #fff;
+            font-family: monospace;
+            text-shadow: -2px 0 0 rgba(255, 255, 255, 0.4), -4px 0 4px rgba(255, 255, 255, 0.6), 5px 0 4px rgba(255, 255, 255, 0.5)
+        }
+
+        .button_container .menu-icon span {
+            background: #3fdb58
+        }
+
+        .u-center-vertical {
+            height: 45vh
+        }
+
+        header {
+            border-color: #a9a9a9;
+            color: #a9a9a9
+        }
+
+        @media (max-width: 440px) {
+            header {
+                border-bottom: 1px solid #a9a9a9;
+                color: #a9a9a9
+            }
+        }
+
+        .green {
+            text-align: center;
+            color: #3fdb58;
+            text-shadow: -2px 0 0 rgba(0, 201, 16, 0.4), -4px 0 4px rgba(108, 236, 103, 0.6), 5px 0 4px rgba(69, 204, 91, 0.5);
+            font-family: monospace;
+            font-size: 22px;
+            line-height: 1;
+            -webkit-font-smoothing: none
+        }
+
+        .console.green:after {
+            position: relative;
+            top: 3px;
+            display: inline-block;
+            visibility: visible;
+            width: 0.55em;
+            height: 1rem;
+            margin-left: 0;
+            content: '';
+            -webkit-animation: blink 1s infinite;
+            animation: blink 1s infinite;
+            -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+            opacity: 1;
+            background-color: #43d45b;
+            -webkit-box-shadow: -4px 0 2px rgba(29, 165, 51, 0.4), -3px 0 14px rgba(85, 231, 102, 0.6), 4px 0 1px rgba(15, 111, 53, 0.5);
+            box-shadow: -4px 0 2px rgba(29, 165, 51, 0.4), -3px 0 14px rgba(85, 231, 102, 0.6), 4px 0 1px rgba(15, 111, 53, 0.5)
+        }
+
+        .typed-cursor {
+            display: none
+        }
+
+
+        /**************/
+        .container {
+            max-width: 1390px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 2em;
+            margin: auto
+        }
+
+        @media (max-width: 680px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px
+            }
+        }
+
+        body {
+            padding-top: 4em
+        }
+
+        .u-font-center,
+        footer {
+            text-align: center !important
+        }
+
+        .u-font-caps {
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            -webkit-font-feature-settings: "c2sc"1, "smcp"1;
+            font-feature-settings: "c2sc"1, "smcp"1
+        }
+
+        .u-font-small {
+            font-size: 0.85em;
+            line-height: 1.8
+        }
+
+        h3.lined {
+            font-weight: 400;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-bottom: 1em
+        }
+
+        h3.lined::before,
+        h3.lined::after {
+            content: "";
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            background: #9e9e9e;
+            height: 1px
+        }
+
+        h3.lined::before {
+            margin-right: 1rem
+        }
+
+        h3.lined::after {
+            margin-left: 1rem
+        }
+
+        .header-group,
+        .line {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .header-group--subtitle {
+            -webkit-box-flex: initial;
+            -ms-flex: initial;
+            flex: initial;
+            padding: 0 1em
+        }
+
+        .header-group--subtitle h3 {
+            font-weight: 400
+        }
+
+        .line {
+            border-bottom: 1px solid
+        }
+
+        @media all and (max-width: 48em) {
+
+            .line,
+            .header-group--subtitle {
+                display: none
+            }
+        }
+
+        .site-title {
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 0;
+            font-family: "neue-haas-unica", "Neue Haas Grotesk", "Helvetica Neue", Helvetica, sans-serif;
+            margin-right: 1em
+        }
+
+        @media all and (max-width: 48em) {
+            .site-title {
+                float: left;
+                line-height: 1.2em
+            }
+        }
+
+        @media only screen and (max-width: 48em) {
+
+            .header-group,
+            .line,
+            .line {
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start
+            }
+
+            .site-nav {
+                -webkit-box-flex: 0;
+                -ms-flex: 0;
+                flex: 0
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .header-group--subtitle {
+                display: none
+            }
+
+            header {
+                padding-top: 1em
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding-top: 0
+            }
+        }
+
+        .site-nav {
+            font-family: "neue-haas-unica", "Neue Haas Grotesk", "Helvetica Neue", Helvetica, sans-serif;
+            cursor: pointer
+        }
+
+        .site-nav ul {
+            list-style-type: none;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
             padding: 0;
-            background-color: #333;
-            font-family: "Courier New", Courier, monospace;
+            margin-left: 1em
         }
-        
-        #window {
-            position:absolute;
-            top:0;
-           bottom:0;
-           left:0;
-           right: 0;
-           background-color: #333;
-            margin: 100px auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+        .site-nav ul li:not(:last-child) {
+            margin-right: 1em
         }
-        
-        #title-bar {
-            width: 595px;
-            height: 20px;
-            line-height: 20px;
-            padding-left: 5px;
-            font-size: 14px;
-            background-color: #eee;
-            font-family: Consolas, serif;
+
+        .site-nav ul li:first-child {
+            padding: 0 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            border: 1px solid #ffffff;
+            min-width: -webkit-fit-content;
+            min-width: -moz-fit-content;
+            min-width: fit-content
         }
-        
-        #title-bar span:before {
-            content: "\25cf";
+
+        .site-nav ul li:first-child:hover {
+            background: rgba(255, 255, 255, 0.4)
         }
-        
-        #title-bar span {
-            font-size: 24px;
+
+        .site-nav ul li:first-child a:before {
+            content: '';
+            background: #10b53b;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px
         }
-        
-        #close {
-            color: red;
+
+        .site-nav li a {
+            text-decoration: none
         }
-        
-        #min {
-            color: yellow;
-        }
-        
-        #max {
-            color: #00FF00;
-        }
-        
-        tilte-title {
-            font-family: 'Arial Black', SimHei;
-            font-weight: bold;
-        }
-        
-        #show-board {
-            position:absolute;
-            top:0;
-           bottom:0;
-           left:0;
-           right: 0;
-           margin: 0 0 0 1.5em;
-            background-color: #333;
-            color: #eee;
-            padding: 10px;
-            font-family: "Courier New", Courier, monospace, Consolas, serif;
-            font-size: 70px;
+
+        .site-nav li a:hover {
+            text-decoration: underline;
+            -webkit-text-decoration-skip: ink;
+            text-decoration-skip: ink
         }
     </style>
+
 </head>
 
-<body>
+<body class="x404 x404_index">
+    <header>
+        <div class="container">
+            <div class="header-group">
+                <a href="" class="site-title">Double Happiness</a>
+                <div class="line"></div>
+            </div>
+            <div class="header-group header-group--subtitle">
+                <h3 class="u-font-small">I'm falling.</h3>
+            </div>
 
-    <div id="window">
-        <!-- <div id="title-bar"><span id="close"></span><span id="min"></span><span id="max"></span><strong id="tilte-title">&nbsp;Console</strong></div> -->
-        <div id="show-board"></div>
+            <div class="header-group site-nav">
+                <div class="line"></div>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">&nbsp;&nbsp;&nbsp;  </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <div class="u-center-vertical">
+                <div style="margin-top: 20vh;">
+                    <div class="green">I'm falling.</div>
+                    <br><br>
+                    <div class="console green">&gt;:</div><span class="typed-cursor">|</span>
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="printer.js"></script>
-    <script>
-        // var str = 'echo Welcome!\n';
-        var str = '  后来\n';
-        str += '  我们都做出了选择\n';
-        str += '  我选择了可乐\n';
-        str += '  可她没有选择我\n';
-        str += '  我好难过';
-        Printer.init(str, {
-            selector: 'show-board',
-            lnStr: ' '
-        }).print();
-    </script>
+    <footer class="container">
+        <h3 class="lined u-font-meta u-font-caps">Design,ShuangXi.</h3>
+        <div class="container">
+            <p class="u-font-caps"><a href="mailto:pp.cola@iCloud.com">pp.cola@iCloud.com</a></p>
+            <p id="obliquestrategies">Dear PanPan: <em>You have the right to reject my love, but you can not despise my love, because it is a heart beating for you sincerely.</em>
+            </p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
